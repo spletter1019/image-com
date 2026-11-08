@@ -494,13 +494,6 @@ export default function App() {
               {/* Column 1: Image 1 & Matrix 1 */}
               <div className="lg:col-span-3 bg-white rounded-2xl border-2 border-red-200 shadow-xs p-3 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-red-100">
-                    <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-800 border border-red-300">
-                      [이미지 1] (표 A)
-                    </span>
-                    <span className="text-[10px] text-gray-400 font-mono">{gridSize}×{gridSize}</span>
-                  </div>
-
                   <ImageGrid
                     id="image-1"
                     title="이미지 1"
@@ -538,13 +531,6 @@ export default function App() {
               {/* Column 2: Image 2 & Matrix 2 */}
               <div className="lg:col-span-3 bg-white rounded-2xl border-2 border-blue-200 shadow-xs p-3 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-blue-100">
-                    <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-300">
-                      [이미지 2] (표 B)
-                    </span>
-                    <span className="text-[10px] text-gray-400 font-mono">{gridSize}×{gridSize}</span>
-                  </div>
-
                   <ImageGrid
                     id="image-2"
                     title="이미지 2"
@@ -582,14 +568,6 @@ export default function App() {
               {/* Column 3: Result Image & Result Matrix */}
               <div className="lg:col-span-3 bg-white rounded-2xl border-2 border-emerald-400 shadow-xs p-3 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-emerald-100">
-                    <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 flex items-center gap-1">
-                      <Sparkles className="w-3 h-3 text-emerald-700" />
-                      <span>[합성 결과 이미지]</span>
-                    </span>
-                    <span className="text-[10px] text-emerald-700 font-mono font-semibold">{gridSize}×{gridSize}</span>
-                  </div>
-
                   <ImageGrid
                     id="image-result"
                     title="합성 결과 이미지"
